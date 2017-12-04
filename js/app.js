@@ -18,5 +18,5 @@ function pickForThem() {
         selected = options[index];
     }
 
-    choice.innerHTML = 'Você vai comer ' + selected + '!';
+    choice.innerHTML = selected;
 }
