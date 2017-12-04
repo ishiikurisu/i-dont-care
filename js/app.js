@@ -5,6 +5,7 @@ function pickForThem() {
     var selected = options[index];
 
     while (selected === undefined) {
+        index = Math.round((Math.random() * 100) % options.length);
         selected = options[index];
     }
 
