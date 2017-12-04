@@ -1,14 +1,14 @@
 function pickForThem() {
     var options = [
-        'Bomba',
-        'Sushi',
-        'Macarrão',
-        'Cozinhe você!',
-        'Coreano',
-        'Chinês',
-        'Donut',
-        'Self service',
-        'Tente novamente!'
+        'bomba',
+        'sushi',
+        'macarrão',
+        'o que você cozinhar',
+        'coreano',
+        'chinês',
+        'donut',
+        'self service',
+        'nada'
     ];
     var element = document.getElementById('choice');
     var index = Math.round((Math.random() * 100) % options.length);
@@ -18,5 +18,5 @@ function pickForThem() {
         selected = options[index];
     }
 
-    choice.innerHTML = '<p>' + selected + '</p>';
+    choice.innerHTML = 'Você vai comer ' + selected + '!';
 }
